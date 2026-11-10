@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Maisha — Life & Leadership Coaching</title>
+<link rel="stylesheet" href="maisha.css">
+</head>
+<body>
+
+<div class="announce">Now booking Spring 2027 Clarity Sessions — limited spots each month · <a href="#intake">Reserve yours</a></div>
+
+<header class="nav" id="nav">
+  <div class="wrap nav-in">
+    <a href="#home" class="logo">Maisha <small>Coaching</small></a>
+    <nav class="nav-links">
+      <a href="#about" data-nav="about">About</a>
+      <a href="#services" data-nav="services">Coaching</a>
+      <a href="#shop" data-nav="shop">Shop</a>
+      <a href="#contact" data-nav="contact">Contact</a>
+    </nav>
+    <div class="nav-right">
+      <button class="cart-btn" aria-label="Open cart" onclick="openCart()">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M5 8h14l-1.2 12H6.2z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+        <span class="cart-count" id="cartCount" data-n="0">0</span>
+      </button>
+      <a href="#intake" class="btn btn-dark">Work With Me</a>
+      <button class="burger" aria-label="Menu" onclick="toggleMenu(true)"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <button class="close" onclick="toggleMenu(false)" aria-label="Close">×</button>
+  <nav>
+    <a href="#home" onclick="toggleMenu(false)">Home</a>
+    <a href="#about" onclick="toggleMenu(false)">About</a>
+    <a href="#services" onclick="toggleMenu(false)">Coaching</a>
+    <a href="#shop" onclick="toggleMenu(false)">Shop</a>
+    <a href="#contact" onclick="toggleMenu(false)">Contact</a>
+  </nav>
+  <a href="#intake" class="btn btn-primary" style="margin-top:auto;justify-content:center" onclick="toggleMenu(false)">Book a Consultation</a>
+</div>
+
+<main>
+<!-- ============ HOME ============ -->
+<div class="page" id="page-home" data-screen-label="01 Home">
+  <section class="hero">
+    <div class="hero-copy">
+      <span class="eyebrow">Life &amp; Leadership Coaching</span>
+      <h1>Come home<br>to <span class="it">yourself.</span><br>Then lead from there.</h1>
+      <p class="lead" style="max-width:500px">I'm Maisha — a certified coach helping ambitious women and the leaders they're becoming find clarity, speak with courage, and build lives that finally fit.</p>
+      <div class="hero-ctas">
+        <a href="#intake" class="btn btn-primary">Book a Consultation <span class="arr">→</span></a>
+        <a href="#services" class="link">Explore coaching</a>
+      </div>
+      <div class="hero-meta">
+        <div><b>12+</b>years guiding<br>leaders &amp; teams</div>
+        <div><b>400</b>clients across<br>three continents</div>
+        <div><b>ICF</b>certified<br>professional coach</div>
+      </div>
+    </div>
+    <div class="hero-img">
+      <img src="../img/maisha-library.jpg" alt="Maisha, smiling, holding an open book in a sunlit library">
+      <div class="hero-badge"><p class="serif">"Maisha" means <em>life</em> in Swahili. That's what we're here to build.</p></div>
+    </div>
+  </section>
+
+  <div class="marquee"><div class="marquee-track">
+    <span>Clarity</span><span>Courage</span><span>Purpose</span><span>Confident communication</span><span>Career transitions</span><span>Leadership presence</span><span>Boundaries</span><span>Rest without guilt</span>
+    <span>Clarity</span><span>Courage</span><span>Purpose</span><span>Confident communication</span><span>Career transitions</span><span>Leadership presence</span><span>Boundaries</span><span>Rest without guilt</span>
+  </div></div>
+
+  <section class="pad">
+    <div class="wrap found">
+      <div class="found-img rv">
+        <img src="../img/reflect.jpg" alt="Woman looking out over an autumn lake">
+        <p class="cap">The pause before the next chapter.</p>
+      </div>
+      <div class="rv">
+        <span class="eyebrow">You found me because…</span>
+        <h2 style="margin-top:20px">You didn't come here because things are calm.</h2>
+        <ul class="signs">
+          <li><i>i.</i>From the outside it looks like success. Inside, it doesn't quite fit anymore.</li>
+          <li><i>ii.</i>You're the one everyone leans on — at work, at home — and you're running on empty.</li>
+          <li><i>iii.</i>The conversation you need to have keeps getting postponed, and you can't find the words.</li>
+          <li><i>iv.</i>You've outgrown a role that once felt like you, and the next one isn't clear yet.</li>
+          <li><i>v.</i>Old strategies — overworking, people-pleasing, pushing harder — have quietly stopped working.</li>
+        </ul>
+        <p class="lead" style="margin-top:36px">That's where our work begins. Not with a quick fix — with the honest, whole picture of you.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="pad bg-paper">
+    <div class="wrap split">
+      <div class="stack-imgs rv">
+        <img class="a" src="../img/maisha-work.jpg" alt="Maisha at her desk preparing for a session">
+        <img class="b" src="../img/vase.jpg" alt="Textured ceramic vase">
+      </div>
+      <div class="rv" style="display:flex;flex-direction:column;gap:26px">
+        <span class="eyebrow">Hello, I'm Maisha</span>
+        <h2>Warm enough to feel safe. <em>Direct enough to move you.</em></h2>
+        <p class="lead">For over a decade I led people-teams inside fast-growing companies. I watched brilliant women shrink themselves to fit rooms that were never built for them — and I did it too.</p>
+        <p style="color:var(--ink-2)">Today I blend evidence-based coaching, the Enneagram and somatic practices to help you understand <em>why</em> you get stuck — and what to do about it, starting this week. My clients describe our sessions as part strategy meeting, part long exhale.</p>
+        <div style="display:flex;align-items:center;gap:34px;margin-top:6px;flex-wrap:wrap">
+          <span class="sig">Maisha</span>
+          <a href="#about" class="link">Read my story</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pad bg-ink">
+    <div class="wrap">
+      <div class="rv" style="max-width:760px">
+        <span class="eyebrow">My approach</span>
+        <h2 style="margin-top:20px">Growth isn't a personality trait. <em>It's a practice.</em></h2>
+      </div>
+      <div class="pillars rv">
+        <div class="pillar"><span class="num">01 — SEE</span><h3>Clarity</h3><p>We name what's actually happening beneath the surface — your patterns, your values, and the story you've been telling yourself.</p></div>
+        <div class="pillar"><span class="num">02 — CHOOSE</span><h3>Courage</h3><p>We practice the conversations, decisions and boundaries you've been avoiding, in a space designed for rehearsal.</p></div>
+        <div class="pillar"><span class="num">03 — LIVE</span><h3>Alignment</h3><p>We turn insight into small, sustainable rhythms so the change holds long after our sessions end.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pad">
+    <div class="wrap">
+      <div style="display:flex;justify-content:space-between;align-items:end;gap:40px;flex-wrap:wrap" class="rv">
+        <div style="max-width:640px"><span class="eyebrow">Ways to work together</span><h2 style="margin-top:20px">Coaching shaped around the season you're in.</h2></div>
+        <a href="#services" class="btn btn-ghost">All services <span class="arr">→</span></a>
+      </div>
+      <div class="svc-grid">
+        <article class="svc rv">
+          <div class="svc-img"><img src="../img/cafe.jpg" alt="Woman working thoughtfully at a café"></div>
+          <div class="svc-body"><span class="eyebrow">Start here</span><h3>Clarity Session</h3><span class="price">$595 · 90 minutes</span><p>One deep, focused conversation. Leave with your Enneagram report, a clear read on what's happening, and next steps you can use the same day.</p><a href="#services" class="link" onclick="setTimeout(()=>scrollToId('svc-clarity'),60)">Learn more</a></div>
+        </article>
+        <article class="svc rv">
+          <div class="svc-img"><img src="../img/session.jpg" alt="Two women laughing over tea"></div>
+          <div class="svc-body"><span class="eyebrow">Most popular</span><h3>The Becoming Program</h3><span class="price">From $1,850 / month</span><p>Three months of one-on-one coaching for women navigating a transition — a new role, a pivot, or a life that needs re-designing.</p><a href="#services" class="link" onclick="setTimeout(()=>scrollToId('svc-becoming'),60)">Learn more</a></div>
+        </article>
+        <article class="svc rv">
+          <div class="svc-img"><img src="../img/maisha-work.jpg" alt="Maisha working at her desk" style="object-position:50% 30%"></div>
+          <div class="svc-body"><span class="eyebrow">For leaders</span><h3>Executive Presence</h3><span class="price">Custom engagements</span><p>Six-month leadership coaching and team facilitation for executives who carry more than their title shows.</p><a href="#services" class="link" onclick="setTimeout(()=>scrollToId('svc-exec'),60)">Learn more</a></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="door">
+    <div class="door-img"><img src="../img/session.jpg" alt="A warm, relaxed coaching conversation"></div>
+    <div class="door-copy rv">
+      <span class="eyebrow">The front door</span>
+      <h2>One honest conversation can change the whole year.</h2>
+      <p class="lead" style="color:var(--ink-2)">Not ready to commit to a program? Begin with a complimentary 20-minute Discovery Call. We'll name what's happening, explore what's possible, and see if we're a fit — no pressure, no pitch.</p>
+      <div style="display:flex;gap:20px;flex-wrap:wrap;align-items:center"><a href="#intake" class="btn btn-dark">Start my intake <span class="arr">→</span></a><span class="muted" style="font-size:14px">Takes about 6 minutes</span></div>
+      <div class="door-small"><p class="price-line">Complimentary <span>· 20-minute video call</span></p></div>
+    </div>
+  </section>
+
+  <section class="pad">
+    <div class="wrap">
+      <div class="quotes rv">
+        <span class="eyebrow">Kind words</span>
+        <div class="quote-mark" style="margin-top:40px">“</div>
+        <div class="quote-slide on">
+          <blockquote>In 90 days with Maisha I made the career move I'd been circling for three years — and I did it without burning myself down to get there.</blockquote>
+          <div class="quote-who"><img src="../img/client-1.jpg" alt=""><div><b>Danielle R.</b>Director of Operations, Atlanta</div></div>
+        </div>
+        <div class="quote-slide">
+          <blockquote>She has a way of asking the one question you've been avoiding — with so much warmth you actually want to answer it.</blockquote>
+          <div class="quote-who"><img src="../img/client-2.jpg" alt=""><div><b>Amara N.</b>Founder &amp; CEO, Nairobi</div></div>
+        </div>
+        <div class="quote-slide">
+          <blockquote>I hired Maisha for myself, then for my whole leadership team. The way we talk to each other has genuinely changed.</blockquote>
+          <div class="quote-who"><img src="../img/client-1.jpg" alt="" style="filter:grayscale(.3)"><div><b>Keisha T.</b>VP People, Toronto</div></div>
+        </div>
+        <div class="quote-dots"><button class="on" aria-label="Quote 1"></button><button aria-label="Quote 2"></button><button aria-label="Quote 3"></button></div>
+      </div>
+      <div class="results rv">
+        <div><b>94%</b><span>of clients report greater clarity on their next step</span></div>
+        <div><b>3 in 4</b><span>make a significant career or life change within a year</span></div>
+        <div><b>4.9 / 5</b><span>average session rating from 280+ reviews</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="closing">
+    <img src="../img/reflect.jpg" alt="">
+    <div class="in">
+      <span class="eyebrow" style="color:var(--saffron)">Your next chapter</span>
+      <h2>Change is your right.<br><em>Start with one conversation.</em></h2>
+      <div style="display:flex;gap:16px;flex-wrap:wrap;justify-content:center">
+        <a href="#intake" class="btn btn-light">Book a Consultation <span class="arr">→</span></a>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ============ ABOUT ============ -->
+<div class="page" id="page-about" data-screen-label="02 About">
+  <section class="about-hero">
+    <div class="img"><img src="../img/maisha-library.jpg" alt="Portrait of Maisha"></div>
+    <div class="copy bg-paper">
+      <span class="eyebrow">About Maisha</span>
+      <h1 style="font-size:clamp(46px,5vw,76px)">I help women stop shrinking — <em>and start leading.</em></h1>
+      <p class="lead">Certified coach, recovering over-achiever, and lifelong student of how people change.</p>
+      <div class="creds"><span>ICF Professional Certified Coach</span><span>Certified Enneagram Practitioner</span><span>M.A. Organizational Psychology</span><span>Somatic Coaching Training</span></div>
+    </div>
+  </section>
+
+  <section class="pad">
+    <div class="wrap">
+      <div class="story rv">
+        <span class="eyebrow">My story</span>
+        <h2 style="margin:20px 0 40px">The short version is: I've been where you are.</h2>
+        <p class="drop">For twelve years I built and led people-teams at fast-growing companies. On paper I was thriving — promotions, a title I'd worked hard for, a calendar booked solid. In reality, I was the person everyone came to with their problems, and the person no one asked how she was doing.</p>
+        <p>It took a burnout I couldn't out-work for me to slow down long enough to ask a different question: not <em>how do I keep up</em>, but <em>what do I actually want?</em> A coach helped me find the answer. Then I spent the next three years training to become one.</p>
+        <p>Today I work with women in transition and the leaders they're becoming — founders, executives, creatives and caregivers who are ready to stop performing their lives and start living them.</p>
+      </div>
+      <p class="pull rv">"I don't believe you need to be fixed. I believe you need space, honest reflection, and someone in your corner who won't let you play small."</p>
+    </div>
+  </section>
+
+  <section class="pad bg-sand">
+    <div class="wrap split">
+      <div class="rv" style="display:flex;flex-direction:column;gap:24px">
+        <span class="eyebrow">Mission</span>
+        <h2>To help one thousand women lead lives that feel like <em>theirs.</em></h2>
+        <p class="lead" style="color:var(--ink-2)">Every session, every resource and every program I create is built around one idea: that clarity is a form of freedom — and everyone deserves access to it.</p>
+        <p style="color:var(--ink-2)">That's why 10% of every program sold funds coaching scholarships for first-generation women leaders.</p>
+      </div>
+      <div class="rv"><img src="../img/session.jpg" alt="Coaching conversation" style="aspect-ratio:1;object-fit:cover;width:100%"></div>
+    </div>
+  </section>
+
+  <section class="pad">
+    <div class="wrap">
+      <div class="rv" style="max-width:720px"><span class="eyebrow">How I coach</span><h2 style="margin-top:20px">Four things you can count on.</h2></div>
+      <div class="values rv">
+        <div><h4>Honest, <em>always.</em></h4><p>I'll tell you what I see — kindly, clearly, and without sugar-coating. You deserve the truth more than you deserve comfort.</p></div>
+        <div><h4>Whole-person, <em>not just career.</em></h4><p>Your work, relationships, body and rest are connected. We look at the full picture, because that's where lasting change lives.</p></div>
+        <div><h4>Grounded in <em>evidence.</em></h4><p>Our work draws on positive psychology, the Enneagram and somatic practice — tools with depth, not trends.</p></div>
+        <div><h4>Designed to <em>stick.</em></h4><p>Every session ends with a small, concrete practice. Insight is lovely; integration is the point.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pad-sm bg-paper">
+    <div class="wrap">
+      <span class="eyebrow">The journey so far</span>
+      <div class="timeline rv">
+        <div><b>2012</b><p>Began leading people-teams in tech &amp; healthcare.</p></div>
+        <div><b>2019</b><p>Burned out, stepped back, and found coaching.</p></div>
+        <div><b>2021</b><p>Earned ICF certification; founded Maisha Coaching.</p></div>
+        <div><b>Today</b><p>400+ clients, corporate partners and a growing scholarship fund.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="closing" style="min-height:520px">
+    <img src="../img/cafe.jpg" alt="">
+    <div class="in">
+      <h2 style="font-size:clamp(42px,5vw,72px)">Let's see what's possible <em>for you.</em></h2>
+      <div style="display:flex;gap:16px;flex-wrap:wrap;justify-content:center"><a href="#services" class="btn btn-light">Explore coaching <span class="arr">→</span></a><a href="#intake" class="btn" style="border:1px solid var(--cream);color:var(--cream)">Book a call</a></div>
+    </div>
+  </section>
+</div>
+
+<!-- ============ SERVICES ============ -->
+<div class="page" id="page-services" data-screen-label="03 Coaching Services">
+  <section class="page-head">
+    <div class="wrap">
+      <span class="eyebrow">Coaching services</span>
+      <h1>Support for every <em>season</em> of becoming.</h1>
+      <p class="lead">Whether you need one clarifying conversation or a committed partner for the months ahead, there's a place to begin.</p>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <div class="svc-row" id="svc-clarity">
+      <div class="svc-row-img rv"><img src="../img/cafe.jpg" alt="Woman reflecting at a café"><span class="tag">Start here</span></div>
+      <div class="svc-row-copy rv">
+        <span class="eyebrow">01 · Single session</span>
+        <h2>Clarity Session</h2>
+        <p class="lead">Ninety minutes. One real conversation. For when you're at a crossroads and need to see the whole picture clearly.</p>
+        <div class="svc-meta"><div><b>$595</b>Investment</div><div><b>90 min</b>Video or in person</div><div><b>+30 min</b>Follow-up call</div></div>
+        <ul class="checks"><li>Full Enneagram assessment and personalised report</li><li>Deep-dive session on your current challenge</li><li>A written summary with your three next steps</li><li>30-minute follow-up call within 3 weeks</li></ul>
+        <div class="svc-actions"><button class="btn btn-primary" onclick="goIntake('clarity')">Book a Clarity Session <span class="arr">→</span></button><a href="#contact" class="link">Ask a question</a></div>
+      </div>
+    </div>
+
+    <div class="svc-row" id="svc-becoming">
+      <div class="svc-row-img rv"><img src="../img/session.jpg" alt="Two women in conversation"><span class="tag">Most popular</span></div>
+      <div class="svc-row-copy rv">
+        <span class="eyebrow">02 · 3-month program</span>
+        <h2>The Becoming Program</h2>
+        <p class="lead">A guided, one-on-one journey for women navigating transition — career pivots, new leadership roles, or a life that needs redesigning.</p>
+        <div class="svc-meta"><div><b>$1,850</b>Per month</div><div><b>12 weeks</b>Bi-weekly sessions</div><div><b>Voxer</b>Between-session access</div></div>
+        <ul class="checks"><li>Six 75-minute coaching sessions</li><li>Values, strengths &amp; Enneagram deep-dive</li><li>Unlimited voice-note support on weekdays</li><li>The Becoming Workbook &amp; guided practices</li><li>Pay-in-full option saves $550</li></ul>
+        <div class="svc-actions"><button class="btn btn-primary" onclick="goIntake('becoming')">Apply for the program <span class="arr">→</span></button><button class="link" onclick="goIntake('discovery')">Book a free discovery call first</button></div>
+      </div>
+    </div>
+
+    <div class="svc-row" id="svc-exec">
+      <div class="svc-row-img rv"><img src="../img/maisha-work.jpg" alt="Maisha at work"><span class="tag">For leaders</span></div>
+      <div class="svc-row-copy rv">
+        <span class="eyebrow">03 · 6-month engagement</span>
+        <h2>Executive Presence</h2>
+        <p class="lead">Leadership coaching for executives and founders who carry more than their title shows — and want to lead with clarity under pressure.</p>
+        <div class="svc-meta"><div><b>Custom</b>Proposal-based</div><div><b>6 months</b>Weekly or bi-weekly</div><div><b>360°</b>Stakeholder review</div></div>
+        <ul class="checks"><li>360° stakeholder interviews and debrief</li><li>Communication &amp; influence coaching</li><li>Optional team facilitation sessions</li><li>Quarterly progress reviews with your sponsor</li></ul>
+        <div class="svc-actions"><button class="btn btn-primary" onclick="goIntake('executive')">Request a proposal <span class="arr">→</span></button></div>
+      </div>
+    </div>
+
+    <div class="svc-row" style="border-bottom:0" id="svc-retreat">
+      <div class="svc-row-img rv"><img src="../img/reflect.jpg" alt="Woman in an autumn landscape"><span class="tag">Group</span></div>
+      <div class="svc-row-copy rv">
+        <span class="eyebrow">04 · Retreats &amp; workshops</span>
+        <h2>Gatherings</h2>
+        <p class="lead">Facilitated workshops and intimate retreats for teams, communities and women's circles who need space to talk about what matters.</p>
+        <div class="svc-meta"><div><b>Half-day</b>to 3-day formats</div><div><b>8–40</b>Participants</div><div><b>Global</b>In person or virtual</div></div>
+        <ul class="checks"><li>Enneagram for teams</li><li>Courageous conversations workshop</li><li>Annual women's renewal retreat (October)</li></ul>
+        <div class="svc-actions"><button class="btn btn-primary" onclick="goIntake('retreat')">Enquire about a gathering <span class="arr">→</span></button></div>
+      </div>
+    </div>
+  </div>
+
+  <section class="pad bg-paper">
+    <div class="wrap">
+      <div class="rv" style="text-align:center;max-width:700px;margin:0 auto"><span class="eyebrow">At a glance</span><h2 style="margin-top:20px">Which is right for me?</h2></div>
+      <table class="compare rv">
+        <thead><tr><td></td><th>Clarity</th><th>Becoming</th><th>Executive</th></tr></thead>
+        <tbody>
+          <tr><td>Best for</td><td>A single decision or crossroads</td><td>A life or career transition</td><td>Leaders growing their impact</td></tr>
+          <tr><td>Length</td><td>90 min + follow-up</td><td>3 months</td><td>6 months</td></tr>
+          <tr><td>Enneagram report</td><td class="y">Included</td><td class="y">Included</td><td class="y">Included</td></tr>
+          <tr><td>Between-session support</td><td>—</td><td class="y">Voice notes</td><td class="y">Voice notes + email</td></tr>
+          <tr><td>Stakeholder feedback</td><td>—</td><td>—</td><td class="y">360° review</td></tr>
+          <tr><td>Investment</td><td>$595</td><td>$1,850 / mo</td><td>By proposal</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="pad">
+    <div class="wrap">
+      <div class="rv" style="text-align:center"><span class="eyebrow">Questions</span><h2 style="margin-top:20px">Frequently asked</h2></div>
+      <div class="faq rv">
+        <details open><summary>What's the difference between coaching and therapy?</summary><p>Therapy often explores the past to heal; coaching focuses on the present and future to move forward. Many of my clients work with both. If something comes up that's better suited to a therapist, I'll tell you — and help you find one.</p></details>
+        <details><summary>Do you work with clients outside the U.S.?</summary><p>Yes. Most sessions happen over video, and I currently work with clients across North America, Europe and East Africa. Scheduling is shown in your local time zone.</p></details>
+        <details><summary>Can my employer pay for coaching?</summary><p>Often, yes. I provide invoices and a short ROI summary you can share with HR or your manager. Executive engagements are usually employer-sponsored.</p></details>
+        <details><summary>What if I'm not sure which option fits?</summary><p>Start with the intake form or a free 20-minute discovery call. I'll recommend the right path — even if that means pointing you elsewhere.</p></details>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ============ INTAKE ============ -->
+<div class="page" id="page-intake" data-screen-label="04 Client Intake"></div>
+
+<!-- ============ SHOP ============ -->
+<div class="page" id="page-shop" data-screen-label="05 Shop">
+  <section class="page-head" style="padding-bottom:60px">
+    <div class="wrap">
+      <span class="eyebrow">The Shop</span>
+      <h1>Tools for the <em>in-between</em> days.</h1>
+      <p class="lead">Journals, guided courses and resources to keep you growing between sessions — or to begin on your own.</p>
+    </div>
+  </section>
+  <div class="wrap" style="padding-bottom:130px">
+    <div class="shop-bar">
+      <div class="filters" id="filters">
+        <button class="on" data-f="all">All</button><button data-f="Digital">Digital</button><button data-f="Course">Courses</button><button data-f="Print">Print</button><button data-f="Gift">Gifts</button>
+      </div>
+      <span class="muted" style="font-size:14px" id="prodCount"></span>
+    </div>
+    <div class="prod-grid" id="prodGrid"></div>
+  </div>
+  <section class="pad-sm bg-blush">
+    <div class="wrap news">
+      <div><span class="eyebrow">Sunday Letters</span><h3 style="margin-top:14px;font-size:40px">A short weekly note for the woman you're becoming.</h3></div>
+      <div><form onsubmit="event.preventDefault();this.innerHTML='<p class=&quot;serif&quot; style=&quot;font-size:24px;padding:16px 0;font-style:italic&quot;>Welcome — your first letter arrives Sunday.</p>'"><input type="email" required placeholder="Your email address"><button>Subscribe →</button></form><p class="muted" style="font-size:13px;margin-top:12px">Plus 15% off your first shop order.</p></div>
+    </div>
+  </section>
+</div>
+
+<!-- ============ PRODUCT ============ -->
+<div class="page" id="page-product" data-screen-label="06 Product"></div>
+
+<!-- ============ CHECKOUT ============ -->
+<div class="page" id="page-checkout" data-screen-label="07 Checkout"></div>
+
+<!-- ============ CONTACT ============ -->
+<div class="page" id="page-contact" data-screen-label="08 Contact">
+  <section class="page-head">
+    <div class="wrap">
+      <span class="eyebrow">Contact</span>
+      <h1>Let's <em>talk.</em></h1>
+      <p class="lead">Questions about coaching, speaking or partnerships? Send a note — I personally reply within two business days.</p>
+    </div>
+  </section>
+  <div class="wrap contact">
+    <div class="contact-info rv">
+      <div class="ci-block"><h5>Email</h5><a href="mailto:hello@maishacoaching.com">hello@maishacoaching.com</a></div>
+      <div class="ci-block"><h5>Studio</h5><p>Available worldwide via video<br><span class="muted" style="font-size:20px">In-person sessions in Atlanta, GA</span></p></div>
+      <div class="ci-block"><h5>Office hours</h5><p>Mon – Thu · 9am – 5pm ET</p></div>
+      <div class="ci-block"><h5>Follow along</h5>
+        <div class="socials" style="margin-top:6px">
+          <a href="#contact" style="border-color:var(--line)" aria-label="Instagram">IG</a><a href="#contact" style="border-color:var(--line)" aria-label="LinkedIn">in</a><a href="#contact" style="border-color:var(--line)" aria-label="Podcast">Pod</a><a href="#contact" style="border-color:var(--line)" aria-label="YouTube">YT</a>
+        </div>
+      </div>
+      <img src="../img/vase.jpg" alt="" style="aspect-ratio:4/3;object-fit:cover;width:100%;margin-top:10px">
+    </div>
+    <div class="contact-card rv">
+      <form id="contactForm" class="form-grid" novalidate>
+        <h3 style="margin-bottom:6px">Send a message</h3>
+        <div class="row2">
+          <div class="field"><label for="c-name">Name</label><input id="c-name" required><span class="msg">Please share your name.</span></div>
+          <div class="field"><label for="c-email">Email</label><input id="c-email" type="email" required><span class="msg">A valid email, please.</span></div>
+        </div>
+        <div class="field"><label for="c-topic">I'm reaching out about</label>
+          <select id="c-topic"><option>Individual coaching</option><option>Executive or team coaching</option><option>Speaking &amp; workshops</option><option>An order from the shop</option><option>Something else</option></select>
+        </div>
+        <div class="field"><label for="c-msg">Message</label><textarea id="c-msg" required placeholder="Tell me a little about what's on your mind…"></textarea><span class="msg">Add a short message.</span></div>
+        <button class="btn btn-dark" style="align-self:flex-start">Send message <span class="arr">→</span></button>
+      </form>
+    </div>
+  </div>
+  <div class="wrap" style="padding-bottom:130px">
+    <div class="book-band rv">
+      <div>
+        <span class="eyebrow">Prefer to talk?</span>
+        <h3 style="margin:12px 0 22px;font-size:38px">Book a free 20-minute discovery call.</h3>
+        <div class="cal" id="cal"></div>
+        <div class="times" id="times"></div>
+      </div>
+      <button class="btn btn-dark" id="bookBtn" onclick="bookCall()">Choose a time</button>
+    </div>
+  </div>
+</div>
+
+<!-- ============ ORDER CONFIRMED ============ -->
+<div class="page" id="page-order" data-screen-label="09 Order Confirmed"></div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a href="#home" class="logo">Maisha</a>
+        <p style="margin-top:18px;max-width:340px">Life &amp; leadership coaching for women who are ready to stop performing their lives and start living them.</p>
+        <div class="socials"><a href="#contact" aria-label="Instagram">IG</a><a href="#contact" aria-label="LinkedIn">in</a><a href="#contact" aria-label="Podcast">Pod</a><a href="#contact" aria-label="YouTube">YT</a></div>
+      </div>
+      <div><h5>Explore</h5><ul><li><a href="#about">About</a></li><li><a href="#services">Coaching</a></li><li><a href="#shop">Shop</a></li><li><a href="#contact">Contact</a></li></ul></div>
+      <div><h5>Begin</h5><ul><li><a href="#intake">Client intake</a></li><li><a href="#intake">Discovery call</a></li><li><a href="#services">Clarity Session</a></li><li><a href="#shop">Free resources</a></li></ul></div>
+      <div><h5>Say hello</h5><ul><li><a href="mailto:hello@maishacoaching.com">hello@maishacoaching.com</a></li><li>Atlanta, GA &amp; online</li></ul></div>
+    </div>
+    <div class="foot-bottom"><span>© 2026 Maisha Coaching LLC. All rights reserved.</span><span>Privacy · Terms · Accessibility</span></div>
+  </div>
+</footer>
+
+<div class="scrim" id="scrim" onclick="closeCart()"></div>
+<aside class="drawer" id="drawer" aria-label="Shopping cart">
+  <div class="drawer-head"><h4>Your bag</h4><button onclick="closeCart()" style="font-size:28px;width:44px;height:44px" aria-label="Close cart">×</button></div>
+  <div class="drawer-body" id="drawerBody"></div>
+  <div class="drawer-foot" id="drawerFoot"></div>
+</aside>
+<div class="toast" id="toast"><span id="toastMsg"></span><button onclick="openCart()">View bag</button></div>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+<script src="intake.js"></script>
+<script src="shop.js"></script>
+</body>
+</html>
